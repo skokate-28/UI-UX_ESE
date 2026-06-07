@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Shaunak Kokate</title>
+    <meta name="description" content="Production-level AI and machine learning projects focused on scalable, real-world impact.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body class="projects-page">
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html#home" class="logo" aria-label="Go to homepage"><img src="LOGO_FINAL .png" alt="SK Logo" class="nav-logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="projects.html" data-route="projects" class="active">Projects</a></li>
+                <li><a href="index.html#interests">Interests</a></li>
+                <li><a href="index.html#contact" class="nav-btn">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main class="projects-main">
+        <section class="projects-hero fade-in-up">
+            <div class="projects-shell">
+                <p class="eyebrow">Portfolio Work</p>
+                <h1>Projects</h1>
+                <p class="hero-subtitle">Applied AI &amp; Machine Learning Systems Built for Real-World Impact</p>
+                <p class="hero-description">These projects represent production-level systems designed with scalability, measurable outcomes, and practical deployment constraints in mind. Each solution combines technical depth with product thinking to solve complex operational problems in realistic business and urban environments.</p>
+            </div>
+        </section>
+
+        <section class="projects-stream" id="projects-list">
+            <div class="projects-shell">
+                <article class="project-block fade-in-up" id="project-1">
+                    <div class="project-inner">
+                        <div class="project-copy">
+                            <h2>Agentic AI Interview System</h2>
+                            <p class="tagline">An adaptive multi-agent AI system that evaluates candidates beyond resumes.</p>
+
+                            <h3>Inspiration</h3>
+                            <p>The inspiration behind this project comes from the limitations of traditional interview processes, which are often inconsistent, biased, and difficult to scale across large applicant pools. I wanted to design a system that could simulate a structured, intelligent interview experience using AI, where every candidate is evaluated fairly while still allowing dynamic interaction. The idea was to move beyond static question banks and create an interview system that adapts in real time, much like a human interviewer, while also capturing deeper signals such as communication ability and confidence.</p>
+
+                            <h3>Workflow</h3>
+                            <p>The system operates through a coordinated multi-agent architecture, where different AI agents are responsible for different aspects of the interview. A technical agent focuses on domain-specific questions, while an HR agent handles behavioral and situational evaluation. As the candidate responds, the system dynamically adjusts the difficulty and direction of questions based on their performance. Simultaneously, audio responses are recorded and processed using NLP and audio analysis techniques to extract meaningful indicators such as clarity, tone, speaking rate, and confidence. These signals are continuously evaluated and aggregated into structured scoring metrics, ultimately producing a comprehensive candidate assessment.</p>
+
+                            <h3>User Journey</h3>
+                            <p>From the user's perspective, the experience begins with selecting a role and initiating the interview session. The system then conducts a fully AI-driven interview where questions evolve in real time based on responses. The candidate answers verbally, creating a more natural interaction compared to traditional forms or MCQs. As the session progresses, the system analyzes both what is being said and how it is being communicated. Once the interview concludes, the candidate's performance is compiled into a detailed report that can be accessed by recruiters for decision-making.</p>
+
+                            <h3>Tech Stack</h3>
+                            <p>The system is built primarily using Python, leveraging a multi-agent architecture for orchestration. Natural Language Processing techniques are used to evaluate response quality, while audio analysis is implemented using libraries such as Librosa to extract speech-related features. Machine learning models are used to generate scoring metrics, and the interface is designed using lightweight web frameworks for smooth interaction.</p>
+
+                            <h3>Key Features</h3>
+                            <p>What makes this system particularly powerful is its ability to adapt questions dynamically instead of relying on a fixed set, creating a more personalized and realistic interview experience. The integration of multiple AI agents allows for parallel evaluation of technical and behavioral aspects, while real-time confidence and communication analysis adds a layer of depth rarely seen in automated systems. The final output is a structured, recruiter-ready evaluation, making the system highly scalable and suitable for enterprise hiring workflows.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-block fade-in-up" id="project-2">
+                    <div class="project-inner">
+                        <div class="project-copy">
+                            <h2>Smart Inventory Management System</h2>
+                            <p class="tagline">Predictive inventory optimization using machine learning.</p>
+
+                            <h3>Inspiration</h3>
+                            <p>This project was inspired by a common challenge faced by retail businesses, where inaccurate demand forecasting leads to either overstocking or stock shortages. Both scenarios result in financial inefficiencies and operational challenges. The goal was to build a system that could intelligently analyze historical sales data and generate accurate demand predictions, enabling businesses to make proactive inventory decisions instead of reactive ones.</p>
+
+                            <h3>Workflow</h3>
+                            <p>The system begins by ingesting historical sales data, typically spanning multiple years, which is then cleaned and preprocessed to ensure consistency. Feature engineering techniques are applied to capture patterns such as seasonality, trends, and demand fluctuations. A machine learning model is then trained on this enriched dataset to learn underlying demand behavior. Once trained, the model generates future sales predictions for individual products, which are further translated into actionable insights such as optimal stock levels and alerts for potential overstocking or understocking. These insights are presented through a visualization layer for easy interpretation.</p>
+
+                            <h3>User Journey</h3>
+                            <p>From a user standpoint, the process starts with uploading historical data into the system. After processing and model training, the system generates predictive insights that are displayed on a dashboard. The user can explore trends, understand demand patterns, and make informed inventory decisions. This transforms inventory management from a manual, intuition-based process into a data-driven strategy.</p>
+
+                            <h3>Tech Stack</h3>
+                            <p>The system is developed using Python, with extensive use of libraries such as Pandas and NumPy for data handling. Machine learning models are implemented using Scikit-learn and time-series forecasting techniques. Visualization and reporting are handled through dashboarding tools such as Power BI or similar platforms.</p>
+
+                            <h3>Key Features</h3>
+                            <p>The core strength of this system lies in its ability to predict demand with high accuracy and translate those predictions into actionable business insights. It helps prevent both overstocking and stockouts, improves operational efficiency, and enables long-term planning. The system is scalable and can be adapted for large retail chains, making it highly relevant for real-world applications.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-block fade-in-up" id="project-3">
+                    <div class="project-inner">
+                        <div class="project-copy">
+                            <h2>Intelligent Traffic Signal Management System</h2>
+                            <p class="tagline">Reinforcement learning-based traffic control for smarter cities.</p>
+
+                            <h3>Inspiration</h3>
+                            <p>Urban traffic congestion is a persistent problem, largely due to static traffic signal systems that do not adapt to real-time conditions. This project was driven by the idea of using reinforcement learning to create a system that can dynamically adjust traffic signals based on actual traffic flow, thereby improving efficiency and reducing congestion in urban environments.</p>
+
+                            <h3>Workflow</h3>
+                            <p>The system models a traffic environment consisting of multiple intersections, where a reinforcement learning agent continuously observes the state of traffic, including vehicle density, queue lengths, and waiting times. Based on this state, the agent takes actions by adjusting signal timings and prioritizing certain lanes. A reward mechanism is defined to encourage reduced congestion and minimized waiting times. Over time, the agent learns optimal strategies through repeated interactions with the environment, leading to increasingly efficient traffic management.</p>
+
+                            <h3>User Journey</h3>
+                            <p>In practice, the system continuously monitors traffic conditions and dynamically updates signal timings without requiring manual intervention. As traffic patterns evolve throughout the day, the system adapts in real time, ensuring smoother flow across intersections. Over time, the system becomes more efficient as it learns from past scenarios.</p>
+
+                            <h3>Tech Stack</h3>
+                            <p>The project is implemented in Python using reinforcement learning techniques such as Q-learning or deep reinforcement learning. Traffic simulations are conducted using tools like SUMO or custom-built environments, and data visualization tools are used to analyze system performance.</p>
+
+                            <h3>Key Features</h3>
+                            <p>This system introduces adaptive signal control, enabling real-time decision-making based on live traffic conditions. It supports coordination across multiple intersections, reduces congestion, and improves overall traffic flow. Its learning-based approach makes it highly scalable and suitable for integration into smart city infrastructure.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="projects-footer">
+        <div class="projects-shell footer-shell">
+            <p>Shaunak Kokate</p>
+            <div class="footer-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+            <p>&copy; <span id="year"></span> All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

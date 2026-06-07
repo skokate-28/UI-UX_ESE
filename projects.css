@@ -1,0 +1,221 @@
+:root {
+    --projects-bg: var(--bg-main);
+    --projects-surface: var(--glass-bg);
+    --projects-line: var(--glass-border);
+    --projects-text: var(--text-primary);
+    --projects-muted: var(--text-secondary);
+    --projects-accent: var(--accent-blue);
+    --projects-accent-soft: rgba(0, 240, 255, 0.1);
+    --projects-shadow: var(--shadow-glass);
+}
+
+.projects-page {
+    background: var(--projects-bg);
+    color: var(--projects-text);
+}
+
+.projects-page .navbar {
+    background: rgba(10, 10, 15, 0.85);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.projects-page .navbar.scrolled {
+    background: rgba(10, 10, 15, 0.9);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.projects-page .nav-links a {
+    color: var(--text-secondary);
+}
+
+.projects-page .nav-links a:hover,
+.projects-page .nav-links a.active {
+    color: var(--text-primary);
+}
+
+.projects-page .nav-btn {
+    border-color: var(--glass-border);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-primary);
+}
+
+.projects-page .nav-btn:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.projects-main {
+    padding-top: 110px;
+}
+
+.projects-shell {
+    width: min(1440px, 94vw);
+    margin: 0 auto;
+}
+
+.projects-hero {
+    padding: 72px 0 34px;
+}
+
+.eyebrow {
+    display: inline-block;
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--projects-accent);
+    background: var(--projects-accent-soft);
+    border: 1px solid rgba(0, 240, 255, 0.24);
+    border-radius: 999px;
+    padding: 7px 14px;
+    margin-bottom: 20px;
+}
+
+.projects-hero h1 {
+    font-size: clamp(2.4rem, 5vw, 4.2rem);
+    letter-spacing: -0.04em;
+    color: var(--text-primary);
+    margin-bottom: 14px;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+    line-height: 1.4;
+    color: var(--text-primary);
+    max-width: 920px;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.hero-description {
+    max-width: 1040px;
+    color: var(--projects-muted);
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+.projects-stream {
+    padding: 52px 0 120px;
+}
+
+.project-block {
+    background: rgba(19, 20, 31, 0.72);
+    border: 1px solid var(--projects-line);
+    border-radius: 26px;
+    box-shadow: var(--projects-shadow);
+    margin-bottom: 56px;
+    overflow: hidden;
+}
+
+.project-inner {
+    display: block;
+    padding: 50px;
+}
+
+.project-copy h2 {
+    font-size: clamp(1.65rem, 2.6vw, 2.2rem);
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.project-copy .tagline {
+    margin-bottom: 28px;
+    font-size: 1.08rem;
+    color: var(--projects-accent);
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.project-copy h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.02rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--text-primary);
+}
+
+.project-copy p {
+    color: var(--projects-muted);
+    line-height: 1.95;
+    font-size: 1.01rem;
+}
+
+.projects-footer {
+    border-top: 1px solid var(--glass-border);
+    background: rgba(10, 10, 15, 0.85);
+    padding: 26px 0;
+}
+
+.footer-shell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: var(--text-secondary);
+    flex-wrap: wrap;
+}
+
+.footer-shell p {
+    font-size: 0.93rem;
+    color: var(--text-secondary);
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer-links a {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    color: var(--projects-accent);
+}
+
+@media (max-width: 1100px) {
+    .project-inner {
+        padding: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-main {
+        padding-top: 88px;
+    }
+
+    .projects-hero {
+        padding: 52px 0 18px;
+    }
+
+    .projects-stream {
+        padding: 34px 0 78px;
+    }
+
+    .project-inner {
+        padding: 28px 22px;
+        gap: 24px;
+    }
+
+    .project-copy h3 {
+        margin-top: 24px;
+    }
+
+    .projects-page .nav-links {
+        background: rgba(10, 10, 15, 0.98);
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-shell {
+        width: min(1440px, 92vw);
+    }
+
+    .project-block {
+        border-radius: 18px;
+    }
+}
